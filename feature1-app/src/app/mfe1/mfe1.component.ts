@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: MIT-0
 
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mfe1',
@@ -10,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Mfe1Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  
+  navigateToShell() {
+    this.router.navigate(['/']);
+  }
 }

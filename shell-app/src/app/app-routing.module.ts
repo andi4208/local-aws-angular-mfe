@@ -5,6 +5,7 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { environment } from 'src/environments/environment';
+import { HomeComponent } from './home.component';
 
 function loadMFE(url: string) {
   return loadRemoteModule({
@@ -19,11 +20,10 @@ function loadMFE(url: string) {
 }
 
 const routes: Routes = [
-
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'mfe1'
+    component: HomeComponent
   },
   {
     path: 'mfe1',
