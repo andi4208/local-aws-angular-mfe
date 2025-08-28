@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 5000",
-    "build": "ng build",
+    "build": "ng build --output-path=dist/mfe1",
+    "build:prod": "ng build --configuration production --output-path=dist/mfe1",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
