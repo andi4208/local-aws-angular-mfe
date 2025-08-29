@@ -15,5 +15,12 @@
       "rewrite": "/index.html",
       "statusCode": 200
     }
+  },
+  "globalHeaders": {
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' *; img-src 'self' data: https:; font-src 'self'",
+    "Cache-Control": "no-cache, no-store, must-revalidate"
+  },
+  "mimeTypes": {
+    ".js": "text/javascript; charset=utf-8"
   }
 }
