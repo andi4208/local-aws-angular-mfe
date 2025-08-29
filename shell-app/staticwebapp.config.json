@@ -1,6 +1,18 @@
 {
   "routes": [
     {
+      "route": "/*.js",
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8"
+      }
+    },
+    {
+      "route": "/*.css",
+      "headers": {
+        "content-type": "text/css"
+      }
+    },
+    {
       "route": "/*",
       "rewrite": "/index.html",
       "allowedRoles": ["anonymous"]
@@ -8,7 +20,7 @@
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/*.{js,css,map,ico}"]
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/*.{js,css,map,ico}", "/*.js", "/*.css"]
   },
   "responseOverrides": {
     "404": {
@@ -21,6 +33,9 @@
     "Cache-Control": "no-cache, no-store, must-revalidate"
   },
   "mimeTypes": {
-    ".js": "text/javascript; charset=utf-8"
+    ".js": "text/javascript; charset=utf-8",
+    ".css": "text/css",
+    ".json": "application/json",
+    ".ico": "image/x-icon"
   }
 }
