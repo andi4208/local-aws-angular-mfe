@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-path=dist/shell",
-    "build:prod": "ng build --configuration production --output-path=dist/shell",
+    "build": "ng build --output-path=../dist/shell",
+    "build:prod": "ng build --configuration production --output-path=../dist/shell",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"

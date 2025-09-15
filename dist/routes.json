@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "route": "/mfe1/*",
+      "serve": "/mfe1/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/*",
+      "serve": "/shell/index.html",
+      "statusCode": 200
+    }
+  ],
+  "platformErrorOverrides": [
+    {
+      "errorType": "NotFound",
+      "serve": "/shell/index.html"
+    }
+  ]
+}

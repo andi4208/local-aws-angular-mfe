@@ -1,0 +1,15 @@
+{
+  "name": "aws-angular-mfe",
+  "version": "1.0.0",
+  "description": "Angular Micro Frontend Application",
+  "scripts": {
+    "build": "node build-all.js",
+    "build:prod": "node build-prod.js",
+    "build:azure": "node build-prod.js",
+    "install:all": "npm install && cd shell-app && npm install && cd ../feature1-app && npm install",
+    "serve": "node serve.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

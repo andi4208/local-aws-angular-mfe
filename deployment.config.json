@@ -1,0 +1,38 @@
+{
+    "moduleName":"Reporting",
+    "activeSlot":"Green",
+    "production":{
+        "slotName":"Green",
+        "buildId":"20250912.1",
+        "CIPipelineUrl":"https://devops.azure.com/build/20250912.1", // CI Build URL
+        "CDPipelineUrl":"https://devops.azure.com/cdpipeline/20250912.1", // CD Pipeline URL
+        "DeployedAt":"2025-09-12T10:15:30Z",
+        "SwappedAt":"2025-09-12T10:20:00Z"
+    },
+    "staging":{
+        "slotName":"Blue",
+        "buildId":"20250911.3",
+        "CIPipelineUrl":"https://devops.azure.com/build/20250911.3", // CI Build URL
+        "CDPipelineUrl":"https://devops.azure.com/cdpipeline/20250911.3", // CD Pipeline URL
+        "DeployedAt":"2025-09-11T09:00:00Z",
+        "SwappedAt":"2025-09-11T09:05:00Z"
+    },
+    "backups":[
+        {
+            "slotName":"Green",
+            "buildId":"20250910.2",
+            "CIPipelineUrl":"https://devops.azure.com/build/20250910.2",
+            "CDPipelineUrl":"https://devops.azure.com/cdpipeline/20250910.2",
+            "DeployedAt":"2025-09-10T08:30:00Z",
+            "SwappedAt":"2025-09-10T08:35:00Z"
+        },
+        {
+            "slotName":"Blue",
+            "buildId":"20250909.4",
+            "CIPipelineUrl":"https://devops.azure.com/build/20250909.4",
+            "CDPipelineUrl":"https://devops.azure.com/cdpipeline/20250909.4",
+            "DeployedAt":"2025-09-09T07:45:00Z",
+            "SwappedAt":"2025-09-09T07:50:00Z"
+        }
+    ]
+}
